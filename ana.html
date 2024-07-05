@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenida cariño 💗</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenida princesa 💗✨</h1>
+        <input type="text" id="nombre1" placeholder="Tu Nombre mi niña">
+        <input type="text" id="nombre2" placeholder="El nombre de tu novio">
+        <input type="date" id="fecha">
+        <button onclick="verificarDatos()">Listo</button>
+        <div id="resultado" class="result"></div>
+    </div>
+
+    <script>
+        function verificarDatos() {
+            const nombre1 = document.getElementById('nombre1').value.toLowerCase().trim();
+            const nombre2 = document.getElementById('nombre2').value.toLowerCase().trim();
+            const fecha = document.getElementById('fecha').value;
+
+            const nombresValidos = [
+                'oasis isaías santiago rojas',
+                'oasis',
+                'oasis isaias',
+                'ana maría loaiza hernández',
+                'ana',
+                'ana maría'
+            ];
+            const fechaValida = '2024-03-05';
+
+            const resultado = document.getElementById('resultado');
+            if ((nombresValidos.includes(nombre1) || nombresValidos.includes(nombre2)) &&
+                (nombresValidos.includes(nombre2) || nombresValidos.includes(nombre1)) &&
+                fecha === fechaValida) {
+                window.location.href = "carta.html";
+            } else {
+                resultado.textContent = 'Mi amor te equivocaste, inténtalo de nuevo';
+                resultado.className = 'result incorrecto show';
+            }
+        }
+    </script>
+</body>
+</html>

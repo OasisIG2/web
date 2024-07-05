@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta de Amor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Angsana New', cursive;
+            text-align: center;
+            background-color: #5d9b9b;
+            padding: 20px;
+            margin: 0;
+            overflow: hidden; /* Ocultar el scroll mientras carga */
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #f3aacb;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: none; /* Ocultar el contenido inicialmente */
+        }
+
+        .image-container {
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .letter {
+            text-align: left;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        #loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Colocar los elementos uno debajo del otro */
+            height: 100vh;
+            width: 100vw;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: url('https://w0.peakpx.com/wallpaper/771/671/HD-wallpaper-stitch-cartoons-cute-lilo-and-stitch-disney.jpg') no-repeat center center fixed;
+            background-size: cover; /* Asegurar que la imagen cubra toda la pantalla */
+        }
+
+        #loading img {
+            width: 50%; /* Ajustar el tamaño de la imagen */
+            max-width: 300px; /* Tamaño máximo de la imagen */
+            height: auto;
+        }
+
+        .center-body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background: #262626;
+        }
+
+        .loader-circle-9 {
+            position: absolute;
+            top: calc(50% + 200px); /* Mover el cargador debajo de la imagen */
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70px;
+            height: 70px;
+            background: transparent;
+            border: 3px solid #3c3c3c;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 70px;
+            font-family: sans-serif;
+            font-size: 12px;
+            color: #00eaff;
+            text-transform: uppercase;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .loader-circle-9:before {
+            content: "";
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            width: 100%;
+            height: 100%;
+            border: 3px solid transparent;
+            border-top: 3px solid #00eaff;
+            border-right: 3px solid #00eaff;
+            border-radius: 50%;
+            animation: animateC 2s linear infinite;
+        }
+
+        .loader-circle-9 span {
+            display: block;
+            position: absolute;
+            top: calc(50% - 2px);
+            left: 50%;
+            width: 50%;
+            height: 4px;
+            background: transparent;
+            transform-origin: left;
+            animation: animate 2s linear infinite;
+        }
+
+        .loader-circle-9 span:before {
+            content: "";
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #00eaff;
+            top: -6px;
+            right: -8px;
+            box-shadow: 0 0 20px #00eaff;
+        }
+
+        @keyframes animateC {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes animate {
+            0% {
+                transform: rotate(45deg);
+            }
+            100% {
+                transform: rotate(405deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Imagen de carga -->
+    <div id="loading">
+        <img src="https://4kwallpapers.com/images/wallpapers/stitch-disney-5120x3005-10901.png" alt="Cargando...">
+        <div class="loader-circle-9">
+            <span></span>
+        </div>
+    </div>
+
+    <!-- Contenido de la carta -->
+    <div class="container" id="content">
+        <div class="image-container">
+            <img src="https://cdn.leonardo.ai/users/de4332c3-56fb-40f7-9dd6-af008f6ad012/generations/557eb16b-ff94-480f-abec-6358d2e2b73b/Default_StitchStitch_est_en_una_pose_sentada_con_sus_piernas_c_2.jpg" alt="Stitch">
+        </div>
+        <div class="letter">
+            <p><strong>Mi niña 🌹 hermosa 🥰</strong></p>
+            <p>Hoy quiero recordarte todas las maneras en que te amo, inspirado por las historias mágicas y románticas que Disney nos ha enseñado. Como en los cuentos de hadas, nuestro amor es un viaje de aventuras, risas y momentos inolvidables.</p>
+            <p>A continuación, mencionaré 20 de ellas :</p>
+            <ol>
+                <li>Eres mi princesa encantada.</li>
+                <li>Tu sonrisa ilumina mis días como el sol de la mañana.</li>
+                <li>Te amo porque, como Aladdin y Jasmine, volamos juntos en nuestro propio mundo.</li>
+                <li>Te amo porque, como Bella y Bestia, encontramos la belleza en nuestras diferencias.</li>
+                <li>Te amo porque, como Ariel, dejas que tu curiosidad te lleve a nuevas experiencias .</li>
+                <li>Cada momento contigo es un sueño hecho realidad.</li>
+                <li>Te amo porque, como Pocahontas, ves el mundo con ojos de amor y respeto.</li>
+                <li>Te amo porque, como Anna, no tienes miedo de mostrar tu amor ❤️.</li>
+                <li>Te amo porque, como Mérida, eres independiente y sigues tu propio camino.</li>
+                <li>Te amo porque, como Wall-E y Eva, nuestro amor trasciende el tiempo y el espacio .</li>
+                <li>Te amo porque, como Simba y Nala, nuestro amor es un ciclo sin fin.</li>
+                <li>Cada beso tuyo es magia pura.</li>
+                <li>Te amo porque, como en "Enredados", nuestra historia está llena de luz y esperanza.</li>
+                <li>Nuestra complicidad es única e incomparable.</li>
+                <li>Contigo el tiempo se detiene y el mundo desaparece.</li>
+                <li>Eres la luz en los días oscuros.</li>
+                <li>Tu valentía me inspira a ser mejor cada día.</li>
+                <li>Tu belleza es asombrosa, tanto por dentro como por fuera.</li>
+                <li>Nuestro amor es un cuento de hadas moderno y real.</li>
+                <li>Quiero estar contigo para siempre.</li>
+                <br>
+                <li>pensaste que solo te diria 20??</li>
+                 <li> Mejor te digo 100</li>
+                 <br>
+                <li>Te amo por tu sonrisa que ilumina mi día 😄.</li>
+                <li>Te amo por tu risa que es música para mis oídos 🎶.</li>
+                <li>Te amo por tus abrazos que me envuelven en un cálido refugio 🤗.</li>
+                <li>Te amo por tu apoyo incondicional en los momentos difíciles 👐.</li>
+                <li>Te amo por tu sabiduría y tus consejos 🧠.</li>
+                <li>Te amo por tu paciencia y comprensión 🙏.</li>
+                <li>Te amo por tus sueños y metas que compartimos 🌠.</li>
+                <li>Te amo por tus ojos que reflejan tu alma hermosa 👀.</li>
+                <li>Te amo por tu valentía para enfrentar los desafíos 💪.</li>
+                <li>Te amo por tu creatividad que inspira 🎨.</li>
+                <li>Te amo por tus pequeños detalles que demuestran tu amor 💌.</li>
+                <li>Te amo por tu generosidad y bondad 💕.</li>
+                <li>Te amo por tu capacidad de perdonar 🤲.</li>
+                <li>Te amo por tu honestidad y transparencia 🌟.</li>
+                <li>Te amo por tu sentido del humor 😂.</li>
+                <li>Te amo por tu amor por la naturaleza 🌳.</li>
+                <li>Te amo por tu dedicación a lo que amas 🎓.</li>
+                <li>Te amo por tu ternura y dulzura 🍯.</li>
+                <li>Te amo por tu inteligencia y curiosidad 🧐.</li>
+                <li>Te amo por tu amor por la familia 👪.</li>
+                <li>Te amo por tu lealtad y fidelidad 🤝.</li>
+                <li>Te amo por tu habilidad para hacerme sentir especial 🌈.</li>
+                <li>Te amo por tus besos que son mi refugio 💋.</li>
+                <li>Te amo por tus caricias que me calman 👐.</li>
+                <li>Te amo por tu fortaleza en los momentos difíciles 🦸‍♀️.</li>
+                <li>Te amo por tu optimismo y esperanza 🌞.</li>
+                <li>Te amo por tu energía y entusiasmo ⚡.</li>
+                <li>Te amo por tu amor por los animales 🐾.</li>
+                <li>Te amo por tu espíritu aventurero 🏕️.</li>
+                <li>Te amo por tu amor por la música 🎧.</li>
+                <li>Te amo por tu amor por la lectura 📚.</li>
+                <li>Te amo por tu habilidad para hacerme reír 😂.</li>
+                <li>Te amo por tu dedicación a nuestra relación 💑.</li>
+                <li>Te amo por tu sinceridad 💯.</li>
+                <li>Te amo por tu amor por la vida 🌸.</li>
+                <li>Te amo por tu humildad 🙇‍♀️.</li>
+                <li>Te amo por tu pasión por lo que haces 🎭.</li>
+                <li>Te amo por tu determinación 🥇.</li>
+                <li>Te amo por tu alegría contagiosa 🌟.</li>
+                <li>Te amo por tu amor por los viajes ✈️.</li>
+                <li>Te amo por tu espíritu libre 🦅.</li>
+                <li>Te amo por tu amor por la cocina 🍳.</li>
+                <li>Te amo por tu amabilidad 🌼.</li>
+                <li>Te amo por tu capacidad de hacerme sentir amado 💖.</li>
+                <li>Te amo por tu amor por el arte 🎨.</li>
+                <li>Te amo por tu comprensión 🤗.</li>
+                <li>Te amo por tu respeto 🙏.</li>
+                <li>Te amo por tu paciencia 🕰️.</li>
+                <li>Te amo por tu dulzura 🍭.</li>
+                <li>Te amo por tu ternura 🧸.</li>
+                <li>Te amo por tu generosidad 💝.</li>
+                <li>Te amo por tu valentía 🦸‍♀️.</li>
+                <li>Te amo por tu dedicación 🏆.</li>
+                <li>Te amo por tu lealtad 💎.</li>
+                <li>Te amo por tu sentido del humor 😂.</li>
+                <li>Te amo por tu amor por la naturaleza 🌿.</li>
+                <li>Te amo por tu creatividad 🌈.</li>
+                <li>Te amo por tu curiosidad 🔍.</li>
+                <li>Te amo por tu inteligencia 🧠.</li>
+                <li>Te amo por tu honestidad 🌟.</li>
+                <li>Te amo por tu transparencia 🌟.</li>
+                <li>Te amo por tu optimismo 🌞.</li>
+                <li>Te amo por tu esperanza 🌄.</li>
+                <li>Te amo por tu energía ⚡.</li>
+                <li>Te amo por tu entusiasmo 🎉.</li>
+                <li>Te amo por tu amor por los animales 🐾.</li>
+                <li>Te amo por tu espíritu aventurero 🏞️.</li>
+                <li>Te amo por tu amor por la música 🎼.</li>
+                <li>Te amo por tu amor por la lectura 📚.</li>
+                <li>Te amo por tu habilidad para hacerme reír 😂.</li>
+                <li>Te amo por tu dedicación a nuestra relación 💏.</li>
+                <li>Te amo por tu sinceridad 🗣️.</li>
+                <li>Te amo por tu amor por la vida 🌼.</li>
+                <li>Te amo por tu humildad 🙏.</li>
+                <li>Te amo por tu pasión ❤️.</li>
+                <li>Te amo por tu determinación 🥇.</li>
+                <li>Te amo por tu alegría 🌟.</li>
+                <li>Te amo por tu amor por los viajes 🌍.</li>
+                <li>Te amo por tu espíritu libre 🦅.</li>
+                <li>Te amo porque, como en todas las historias de Disney, nuestro amor siempre encontrará su camino y tendrá un final feliz 🏰.</li>
+            </ol>
+            <p>Eres mi princesa y cada día contigo es un nuevo capítulo de nuestra propia historia de amor de Disney. Gracias por ser mi compañera en esta aventura mágica. Te amo hoy, mañana y siempre.</p>
+            <p>Con todo mi amor,</p>
+            <p>Tu novio hermoso ❣️</p>
+        </div>
+    </div>
+
+    <script>
+        // Mostrar contenido después de 8 segundos
+        setTimeout(function() {
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+            document.body.style.overflow = 'auto'; // Habilitar el scroll cuando el contenido esté visible
+        }, 8000); // 8000 milisegundos = 8 segundos
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta de Amor</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Parisienne&family=Playfair+Display:wght@400;700&display=swap">
+    <link rel="stylesheet" href="carta.css"> <!-- Enlace al archivo CSS -->
+</head>
+<body>
+    <div class="container">
+        <div class="letter">
+            <p>Querida Ana,</p>
+            <p>Hace mucho, mucho tiempo, en un reino mágico donde los corazones se conectan más allá de las distancias y las pantallas, comenzó nuestra propia historia de amor, digna de los cuentos de hadas más bellos de Disney. Era un día común en el vasto reino de Facebook cuando, como por arte de magia, recibí un mensaje tuyo en mi Messenger. Ese simple "hola" resonó como el eco de una campanada encantada, marcando el inicio de nuestro cuento.</p>
+            <p>En ese instante, sin caballeros ni armaduras, ni dragones que derrotar, nuestras almas se encontraron a través de palabras y sonrisas virtuales. No necesitábamos castillos ni jardines encantados; nuestro escenario era el mundo digital, y nuestras conversaciones, los hechizos que nos unieron. Desde el primer mensaje, supe que había encontrado a mi princesa.</p>
+            <p>Al igual que Cenicienta en el baile, tú apareciste de la nada y transformaste mi vida. Y, como en los cuentos donde los príncipes saben desde el primer momento que han encontrado a su verdadero amor, te pedí ser mi novia al segundo día. A partir de entonces, nuestro amor ha florecido sin los confines del tiempo y el espacio, un amor que se alimenta de la esperanza y la magia.</p>
+            <p>Aunque nuestras manos no se han tocado y nuestros ojos solo se han encontrado a través de fotos y videos, hemos compartido momentos únicos y mágicos. Hemos visto películas juntos en videollamadas, nuestras risas sincronizadas, nuestros corazones latiendo al unísono a pesar de la distancia. Cada noche, nuestras llamadas eran como las serenatas de los enamorados de antaño, llenas de promesas y sueños compartidos.</p>
+            <p>Como en todas las historias de Disney, hemos enfrentado pruebas y desafíos. Pero, como todas las princesas y príncipes, hemos demostrado que el amor verdadero siempre encuentra la manera. Hemos superado obstáculos con la fuerza de nuestros sentimientos y la certeza de que, algún día, nuestras manos se encontrarán en un abrazo eterno.</p>
+            <p>Hoy celebramos cuatro meses de este maravilloso viaje. Cuatro meses desde aquel primer mensaje mágico. Cuatro meses de risas, de lágrimas compartidas, de sueños construidos juntos. Cuatro meses de un amor que trasciende cualquier barrera, como el de Ariel y Eric, Bella y Bestia, o Aladdin y Jasmine.</p>
+            <p>Nuestro cuento no termina aquí. Seguiremos escribiendo cada página con la misma pasión y dedicación, sabiendo que, como en todas las historias de Disney, nuestro final será feliz. Porque el amor verdadero siempre triunfa, y nosotros somos la prueba viviente de ello.</p>
+            <p class="signature">Con todo mi amor,<br>Oasis</p>
+        </div>
+        <div class="image-container">
+            <img src="https://www.ecodelcinema.com/wp-content/uploads/2023/07/La-bella-e-la-bestia-1200x628.jpg" alt="Imagen 1">
+            <img src="https://i.pinimg.com/originals/42/90/9e/42909e1650bff886ab6745f9cd70ec17.jpg" alt="Imagen 2">
+        </div>
+        <div class="button-container">
+            <button id="btn" onclick="showExtraImages()">Presiona aquí amor</button>
+        </div>
+        <div class="extra-images" id="extra-images">
+            <img src="https://i.pinimg.com/originals/1f/f2/51/1ff251e3b84152867727c9534ba8a4a2.jpg" alt="Extra Imagen 1">
+            <img src="https://th.bing.com/th/id/OIP.iPqjEEEF8E-e4TRM5FWlTAAAAA?rs=1&pid=ImgDetMain" alt="Extra Imagen 2">
+            <img src="https://i.pinimg.com/originals/4d/8a/c7/4d8ac7d1b8b2bfecab8ced1a350c8dde.jpg" alt="Extra Imagen 3">
+            <img src="https://cdn.leonardo.ai/users/de4332c3-56fb-40f7-9dd6-af008f6ad012/generations/557eb16b-ff94-480f-abec-6358d2e2b73b/Default_StitchStitch_est_en_una_pose_sentada_con_sus_piernas_c_0.jpg" alt="Extra Imagen 4">
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button id="btn-next-page" onclick="window.location.href='amor.html'" style="display: none;">Ir a la siguiente página</button>
+    </div>
+
+    <script>
+        function showExtraImages() {
+            var extraImages = document.getElementById('extra-images');
+            extraImages.classList.add('visible');
+            extraImages.style.display = 'flex';
+
+            var nextPageButton = document.getElementById('btn-next-page');
+            nextPageButton.style.display = 'block'; // Mostrar el botón de siguiente página
+        }
+    </script>
+</body>
+</html>

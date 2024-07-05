@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    background-image: url('https://4kwallpapers.com/images/wallpapers/stitch-disney-5120x3005-10901.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
+}
+
+.container {
+    max-width: 700px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: 90vh;
+    margin-bottom: 20px; /* Espacio adicional al final */
+}
+
+.letter {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.signature {
+    margin-top: 20px;
+    font-family: 'Angsana New', cursive;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Angsana New', cursive;
+    font-size: 1.2em;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    margin-top: 20px; /* Ajusta el margen superior según necesites */
+}
+
+.image-container img {
+    width: 45%; /* Ajusta el tamaño de las imágenes */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 10px; /* Añade un margen entre las imágenes */
+    object-fit: cover; /* Mantén la proporción de las imágenes */
+    max-height: 300px; /* Ajusta la altura máxima de las imágenes */
+}
+
+.button-container {
+    margin-top: 20px;
+    text-align: center; /* Alinea el contenido al centro */
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: #6c5ce7;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 5px;
+    transition: all ease 0.1s;
+    box-shadow: 0px 5px 0px 0px #a29bfe;
+}
+
+button:active {
+    transform: translateY(5px);
+    box-shadow: 0px 0px 0px 0px #a29bfe;
+}
+
+.extra-images {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.extra-images img {
+    width: 200px; /* Ajusta el tamaño de las imágenes ocultas */
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-in-out;
+    object-fit: cover; /* Mantén la proporción de las imágenes */
+}
+
+.extra-images.visible img {
+    opacity: 1;
+    transform: translateY(0);
+}
